@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* this is to hide the unwanted space*/
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+nav {
+  position: fixed; /* this makes an element fixed relative to the device*/
+  top:0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+.in-head{
+    color: #ffcc66;
+}
+
+a:hover {
+  color: orange;
+}
+
+.logo {
+  width: 10%;
+  font-weight: 800;
+  color: orange;
+  font-size: larger;
+}
+
+.links {
+  width: 35%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content{
+    width: 70%;
+    text-align: center;
+    padding: 2rem;
+    z-index: 5;
+}
+
+.hero-content h1{
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.hero-content p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.hero-content .buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: auto;
+}
+
+.hero-content button{
+    background-color: orange;
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    margin: 2rem 0;
+    font-weight: 800;
+}
+
+.hero-content button:hover{
+    background-color: #ffcc66;
+}
+
+.hero-content .buttons .collection{
+    background-color: #ccc;
+    color: #333;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
